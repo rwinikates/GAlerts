@@ -5,8 +5,7 @@ if (window.webkitNotifications.checkPermission() == 0) {
   var lastAlert = nextAlert;
   var incremental = 100;
   
-  var minutes = frequency * 60 * 1000; //(minutes times 60 for seconds times 1000 for milliseconds)
-  console.log(minutes);
+  var minutes = 5 * 60 * 1000; //(minutes times 60 for seconds times 1000 for milliseconds)
   
   var icon = '48.png';
   var mCoinSound = new Audio("https://dl.dropbox.com/u/7079101/coin.mp3");
