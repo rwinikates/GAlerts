@@ -1,0 +1,19 @@
+{
+  "name": "GAlerts!",
+  "version": "1",
+  "description":
+    "Shows off Google Analytics real time traffic notifications, which are \"toast\" windows that pop up on the desktop.",
+  "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
+  "permissions": ["tabs", "notifications", "contentSettings"],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/analytics/*"],      
+      "js": ["jquery-1.10.2.min.js", "galerts.js"]
+    }
+  ],
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "48.png"
+  ]
+}
