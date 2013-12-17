@@ -33,6 +33,7 @@ if (window.webkitNotifications.checkPermission() == 0) {
   setInterval(getActiveUsers, frequency);
 }
 else {
+  // Add button to allow desktop notifications if they aren't already available
   console.log("Notifications are not allowed for this page yet.");
   $('body').prepend('<button id="ask_permission">Alert me!</button>');
   $('#ask_permission').click(function(e) {
