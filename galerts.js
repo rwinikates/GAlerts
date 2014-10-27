@@ -1,4 +1,4 @@
-if (window.webkitNotifications.checkPermission() == 0) {
+if (Notification.permission == "granted") {
   console.log("Notifications are supported!");
   // set initial values
   var nextAlert = 500; 
@@ -38,7 +38,7 @@ else {
   $('body').prepend('<button id="ask_permission">Alert me!</button>');
   $('#ask_permission').click(function(e) {
 		  e.preventDefault();
-		  window.webkitNotifications.requestPermission();
+		  Notification.requestPermission();
 		  alert("Click allow above, and then refresh to see notifications.");
 		});
 }
