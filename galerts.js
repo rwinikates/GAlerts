@@ -1,9 +1,9 @@
 if (Notification.permission === "granted") {
   console.log("Notifications are supported!");
   // set initial values
-  var nextAlert = 200;
+  var nextAlert = 50;
   var lastAlert = nextAlert;
-  var incremental = 50;
+  var incremental = 10;
 
   var frequency = 5 * 60 * 1000 ; //(minutes times 60 for seconds times 1000 for milliseconds)
 
