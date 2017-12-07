@@ -1,14 +1,14 @@
 if (Notification.permission === "granted") {
   console.log("Notifications are supported!");
   // set initial values
-  var nextAlert = 50;
+  var nextAlert = 2000;
   var lastAlert = nextAlert;
-  var incremental = 10;
+  var incremental = 100;
 
-  var frequency = 5 * 60 * 1000 ; //(minutes times 60 for seconds times 1000 for milliseconds)
+  var frequency = 1 * 60 * 1000 ; //(minutes times 60 for seconds times 1000 for milliseconds)
 
 
-  var mCoinSound = new Audio("https://dl.dropbox.com/u/7079101/coin.mp3");
+  var mCoinSound = new Audio("https://raw.githubusercontent.com/rwinikates/GAlerts/master/coins.mp3");
 
   function getActiveUsers() {
 	 var active = document.getElementById("ID-overviewCounterValue").innerHTML;
