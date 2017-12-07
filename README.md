@@ -12,5 +12,5 @@ This is a chrome extension that uses the HTML 5 desktop alerts at various traffi
 
 5. That should be it!
 
-The heart of the extension is the galerts.js file.  If you wish to tweak it to remove the sound or change the alert levels or increments it alerts at, just edit the file there, it is pretty straightforward JS. Likely things to change are the nextAlert and incremental variables to set when to start getting alerted and at what resolution you want alerts at. 
+The heart of the extension is the galerts.js file.  If you wish to tweak it to remove the sound or change the alert levels or increments it alerts at, just edit the file there, it is pretty straightforward JS.  Unfortunately the options page doesn't do anything yet. If you want to edit settings in galerts.js, look at the nextAlert and incremental variables to set when to start getting alerted and at what resolution you want alerts at. 
 
