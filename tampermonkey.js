@@ -5,7 +5,7 @@
 // @description  Set threshold, alert when realtime traffic goes over threshold
 // @author       Rwinikates
 // @grant        GM_notification
-// @match        https://analytics.google.com/analytics/web/
+// @match        https://analytics.google.com/*
 // ==/UserScript==
 
 (function() {
