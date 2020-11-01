@@ -10,13 +10,13 @@
 
 (function() {
     'use strict';
-    // Your code here...
+    // console.log('galerts executing'); // debug for matching
     if (Notification.permission === "granted") {
         console.log("Notifications are supported!");
         // set initial values
-        var nextAlert = 3000;
+        var nextAlert = 1000;
         var lastAlert = nextAlert;
-        var incremental = 250;
+        var incremental = 100;
 
         var frequency = 1 * 60 * 1000 ; //(minutes times 60 for seconds times 1000 for milliseconds)
 
